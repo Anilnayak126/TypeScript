@@ -1,4 +1,3 @@
-// console.log("Jaga bhai A interview Pain ki tk Help Kribu");
 
 // let age: number = 12;
 
@@ -68,6 +67,36 @@ console.log(CalculateTax(500000));*/
 
 
 // ****Objects
+
+// ---Optional Chaning
+
+/*let Employees : { 
+    id : number,
+    name?:string 
+} = { id : 1}
+
+Employees.name = 'Anil'
+
+console.log(Employees); */
+// ----------------------------------
+let Employees : {
+     readonly id : number,
+     name : string,
+     retire : ( date : Date) => void
+    
+} = { id : 1 ,
+     name : 'Anil',
+     retire : (date : Date ) => {
+        console.log(date);  
+     }
+    }
+
+// Employees.id = 2  --for this stuff i have used readonly
+
+console.log(Employees);
+
+
+
 
 
 
